@@ -8,7 +8,7 @@ public class Task {
     GregorianCalendar dueDate;
     Boolean completed;
 
-    public Task(){
+    public Task(String name, String notes, GregorianCalendar dueDate, boolean completed){
         completed = false;
     }
 
