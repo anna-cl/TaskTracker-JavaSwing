@@ -13,9 +13,9 @@ This document describes the configuration, architecture, and functionalities of 
 
 
 ### Lead/developers 
+Anna Liang
 
-
-### URLs 
+### URLs and Resources
 
 
 ### Release date 
@@ -24,3 +24,21 @@ This document describes the configuration, architecture, and functionalities of 
 ### Testing 
 
 ### Code review 
+
+
+## Solution Overview 
+
+### Phases
+
+### Storage
+
+### Structure
+MVC design pattern
+
+### GUI Styles
+
+### Architecture
+
+## Common Problems
+
+## Future/ Outstanding Scope
