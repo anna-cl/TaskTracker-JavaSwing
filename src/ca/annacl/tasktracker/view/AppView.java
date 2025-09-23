@@ -3,7 +3,6 @@ package ca.annacl.tasktracker.view;
 import ca.annacl.tasktracker.control.AppController;
 
 import javax.swing.*;
-import javax.swing.border.Border;
 import java.awt.*;
 import java.awt.event.ActionListener;
 import java.awt.event.ItemListener;
@@ -22,6 +21,9 @@ public class AppView {
     private JButton allTaskButton;
     private JButton overDueButton; 
     private JButton upcomingButton;
+    private JButton addTaskButton;
+
+    private JCheckBox completCheckBox;
 
     public AppView(String title){
         //============= Window frame and panels setup(GUI) ============
@@ -45,17 +47,27 @@ public class AppView {
 
         //============== Main Frame Buttons - UI Components ==============
         allTaskButton = new JButton("All Tasks");
-        allTaskButton.setAlignmentX(Component.LEFT_ALIGNMENT);
         overDueButton = new JButton("Overdue Tasks");
-        overDueButton.setAlignmentX(Component.LEFT_ALIGNMENT);
         upcomingButton = new JButton("Upcoming Tasks");
-        upcomingButton.setAlignmentX(Component.LEFT_ALIGNMENT);
+        
+        addTaskButton = new JButton("Add a Task");
 
         topPanel.add(allTaskButton);
         topPanel.add(overDueButton);
         topPanel.add(upcomingButton);
-
-
+        botthomPanel.add(addTaskButton);
     } //constructor ends
+
+
+    public void viewButtonListener(ActionListener listenerForButton){
+        allTaskButton.addActionListener(listenerForButton);
+        overDueButton.addActionListener(listenerForButton);
+        upcomingButton.addActionListener(listenerForButton);
+        addTaskButton.addActionListener(listenerForButton);
+    }
+
+    public void viewBoxListener(ActionListener listenerForCheckBox){
+
+    }
 
 }

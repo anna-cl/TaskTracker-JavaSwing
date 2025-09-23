@@ -21,7 +21,10 @@ public class App{
         SwingUtilities.invokeLater(new Runnable(){
             @Override
             public void run(){
-                AppView appView = new AppView("*** Task Tracker ***");
+                // Task task = new Task(null, null, null, false);
+                AppView view = new AppView("*** Task Tracker ***");
+                // AppController controller = new AppController(task, view);
+                AppController controller = new AppController(view);
             }
 
         });
